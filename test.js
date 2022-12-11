@@ -1,2 +1,2 @@
 let a = "Elzero web shool"
-console.log(a.toUpperCase().charAt(2) + a.slice(3 , 6) );
+console.log(a.charAt(12).toUpperCase().repeat(8));
