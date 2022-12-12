@@ -1,3 +1,3 @@
 let st = "elzero web school";
-let p_n = st.indexOf("w")
-st[p_n] === "w" ? console.log("good"):"error";
+let a = st.toUpperCase().charAt(0) + st.slice(1, 6);
+a.repeat(2) === "ElzeroElzero" ? console.log("good") : console.log("error");
