@@ -1,13 +1,12 @@
-let a = ["Ahmed", "mazero", "elham", "osama", "gamal", "ameer"];
-
-console.log(a.slice(0, 4).reverse());
-
-a.slice(1, 3).reverse();
-let b = a[1].slice(0, 2);
-b = "El";
-let d = a[1].slice(2, 6);
-console.log(b + d);
+let a = [1, 2, "ahmed", "khaled", "mohamed", "ana", 3];
+let b = [];
 
 
-console.log(a[1].slice(4, 5) + a[1].slice(5).toUpperCase());
+for (let i = 0; i < a.length; i++) {
+  if (typeof a[i] === typeof"String") {
+     b.push(a[i]);
+}
+}
+
+console.log(b);
 
