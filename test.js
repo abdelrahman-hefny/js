@@ -1,3 +1,22 @@
-let st = "elzero web school";
-let a = st.toUpperCase().charAt(0) + st.slice(1, 6);
-a.repeat(2) === "ElzeroElzero" ? console.log("good") : console.log("error");
+
+
+let m = "Manager";
+let i = "it";
+let ds = "desgin";
+let dv = "dev";
+let su = "support";
+let salary = 0;
+let job = ds;
+switch (job) {
+  case "Manager":
+    console.log(8000);
+    break;
+  case "it" || "support":
+    console.log(8000);
+    break;
+  case "dev" || "design":
+    console.log(8000);
+    break;
+  default:
+    console.log(4000);
+}
