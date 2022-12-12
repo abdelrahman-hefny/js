@@ -1,22 +1,13 @@
+let a = ["Ahmed", "mazero", "elham", "osama", "gamal", "ameer"];
+
+console.log(a.slice(0, 4).reverse());
+
+a.slice(1, 3).reverse();
+let b = a[1].slice(0, 2);
+b = "El";
+let d = a[1].slice(2, 6);
+console.log(b + d);
 
 
-let m = "Manager";
-let i = "it";
-let ds = "desgin";
-let dv = "dev";
-let su = "support";
-let salary = 0;
-let job = ds;
-switch (job) {
-  case "Manager":
-    console.log(8000);
-    break;
-  case "it" || "support":
-    console.log(8000);
-    break;
-  case "dev" || "design":
-    console.log(8000);
-    break;
-  default:
-    console.log(4000);
-}
+console.log(a[1].slice(4, 5) + a[1].slice(5).toUpperCase());
+
