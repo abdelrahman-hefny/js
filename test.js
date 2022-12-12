@@ -1,29 +1,22 @@
-let n1 = window.prompt("enter the first num");
+let n = "ahmed";
+let theGander = "mail";
+let thege = 30;
 
-let con = window.prompt("enter the operator");
+if (theGander === "mail") {
+  console.log("Mr");
+} else {
+  console.log("Ms");
+}
 
-let n2 = window.prompt("enter the scande num");
-var er = "ادخل رقم صحيح";
+let g = theGander === "mail" ? "Mr" : "Ms";
 
-if (con == "+") {
-  document.write(+n1 + +n2);
-}
-else if (con == "+") {
-  document.write(+n1 + +n2);
-}
-else if (con == "-") {
-  document.write(+n1 - +n2);
-}
-else if (con == "*") {
-  document.write(+n1 * +n2);
-}
-else if (con == "/") {
-  document.write(+n1 / +n2);
-}
-else if (con == "%") {
-  document.write(+n1 % +n2);
-}
-else if (con == "**") {
-  document.write(n1 ** +n2);
-}
-else {document.write(er)};
+let a =
+  thege < 20
+    ? ">20"
+    : thege > 20 && thege < 60
+    ? "30 - 60"
+    : thege > "60"
+    ? ">60"
+    : "unwen";
+
+    console.log(`Hello ${g } ${n} ${a}`);
