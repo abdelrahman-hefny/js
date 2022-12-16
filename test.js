@@ -1,27 +1,32 @@
 function show(a, b, c) {
-  typeof a === typeof "string"
-    ? (a = a)
+ let z = typeof a === typeof "string"
+    ? document.write(a)
     : typeof b === typeof "string"
-    ? (a = b)
+    ? document.write(b)
     : typeof c === typeof "string"
-    ? (a = c)
+    ? document.write(c)
     : "un";
-  document.write(a);
 
-  typeof a === "number"
+   
+  
+ typeof a === 'number'  
     ? document.write(" " + a)
-    : typeof b === "number"
+    :  typeof b === 'number' 
     ? document.write(" " + b)
-    : typeof c === "number"
+    :  typeof c === 'number' 
     ? document.write(" " + c)
     : "un";
 
+
+
+
+
   a === true
-    ? document.write(" av")
+    ? document.write(" av" )
     : b === true
-    ? document.write(" av")
+    ? document.write(" av" )
     : c === true
-    ? document.write(" av ")
+    ? document.write(" av " )
     : document.write(" unAv ");
 }
 
