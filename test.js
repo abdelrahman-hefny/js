@@ -1,29 +1,35 @@
-function pr(us, age, pr, show = "Yes", ...sk) {
-  document.write(`<div>`);
-  document.write(`<h1>Hello ${us}</h1>`);
-  document.write(`<p>age ${age}</p>`);
-  document.write(`<p>sallare $${pr}</p>`);
+function show(a, b, c) {
+  typeof a === typeof "string"
+    ? document.write(a)
+    : typeof b === typeof "string"
+    ? document.write(b)
+    : typeof c === typeof "string"
+    ? document.write(c)
+    : "un";
 
-
-
-
-  if (show === "Yes") {
-
-    if (sk.length > 0) {
-    document.write(`<p>${sk.join(" | ")}</p>`);
-    }
-    
-     else{document.write( `<p>there no skills</p>`)};
-
-
-  } else {document.write(`<p>do not show skills</p>`)};
-
+   
+  
+ typeof a === 'number'  
+    ? document.write(" " + a)
+    :  typeof b === 'number' 
+    ? document.write(" " + b)
+    :  typeof c === 'number' 
+    ? document.write(" " + c)
+    : "un";
 
 
 
 
 
-  document.write(`</div>`);
+  a === true
+    ? document.write(" av" )
+    : b === true
+    ? document.write(" av" )
+    : c === true
+    ? document.write(" av " )
+    : document.write(" unAv ");
 }
 
-pr("abdo", 19, 10, "Yes", "html ", "css " , "ad");
+show("abdo", 17, true);
+// show(17, "abdo", true);
+// show(false, 17,  "abdo");
