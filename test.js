@@ -1,6 +1,9 @@
-let a = "I LOVE FOOOOD CODE VERY PLAYING MUCH";
-let s = a.split(" ").filter(function (el) {
-  return el.length <= 4;
-}).join("  ");
+let mix = "a13ds2xi"
 
-console.log(s);
+let num = mix.split("").map(
+    function (el){
+        return !isNaN(parseInt(el)) ? el :"";
+    }
+).join("")
+
+console.log(num * num);
