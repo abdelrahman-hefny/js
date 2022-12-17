@@ -1,5 +1,6 @@
-let a = [-1, 10, -49, 309, -498];
-let as = a.map(function (num) {
-  return num === -num ? +num : -num;
-});
-console.log(as);
+let a = "I LOVE FOOOOD CODE VERY PLAYING MUCH";
+let s = a.split(" ").filter(function (el) {
+  return el.length <= 4;
+}).join("  ");
+
+console.log(s);
