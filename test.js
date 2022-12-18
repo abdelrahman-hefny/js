@@ -1,24 +1,14 @@
-let allLis = document.querySelectorAll("ul li");
-let allDiv = document.querySelectorAll("div");
+let mys = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,1,2,z";
 
-allLis.forEach(function (ele) {
-    ele.onclick = function(){
-        //remove class
-        allLis.forEach(function(ele){
-            ele.classList.remove("active")
-        })
-        // add class
+let solutoin = mys
+  .split("")
+  .map((ele) => (ele !== "," ? ele : ""))
+  .map((ele) => (ele !== "_" ? ele : " "))
+  .filter((ele) => isNaN(parseInt(ele)))
+  .reduce((acc, carnt) => acc + carnt)
+  .slice(true, -isNaN(mys));
 
-        this.classList.add("active")
-        // display div
-        allDiv.forEach(
-            function(ele){
-                ele.style.display = 'none'
-            }
-        ) 
+// solutoin[solutoin.length - 1] = "";
+// solutoin[3] = "";
 
-
-
-
-    }
-});
+console.log(solutoin);
