@@ -1,9 +1,24 @@
-let mix = "a13ds2xi"
+let allLis = document.querySelectorAll("ul li");
+let allDiv = document.querySelectorAll("div");
 
-let num = mix.split("").map(
-    function (el){
-        return !isNaN(parseInt(el)) ? el :"";
+allLis.forEach(function (ele) {
+    ele.onclick = function(){
+        //remove class
+        allLis.forEach(function(ele){
+            ele.classList.remove("active")
+        })
+        // add class
+
+        this.classList.add("active")
+        // display div
+        allDiv.forEach(
+            function(ele){
+                ele.style.display = 'none'
+            }
+        ) 
+
+
+
+
     }
-).join("")
-
-console.log(num * num);
+});
