@@ -1,21 +1,8 @@
-let user = document.querySelector("[name = 'name']");
-let age = document.querySelector("[name = 'age']");
+let ele = document.getElementById("p");
 
-document.forms[0].onsubmit = function (e) {
-  uservalid = false;
-  ageValid = false;
-
-  if (user.value !== "" && user.value.length <= 10) {
-    uservalid = true;
-  }
-
-  if (age.value !== "") {
-    ageValid = true;
-  }
-
-  if (uservalid === false || ageValid === false) {
-    e.preventDefault();
-  }
-
-  console.log(e);
+console.log(ele.classList[0]);
+console.log(ele.classList.contains("one"));
+console.log(ele.classList.item("2"));
+ele.onclick = function () {
+  ele.classList.toggle("onde");
 };
