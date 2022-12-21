@@ -1,10 +1,10 @@
-let a = setTimeout(po, 3000);
-function po() {
-  console.log(`abdo`);
-}
-console.log(a);
-let btn = document.querySelector("button");
+let set = setInterval(dow,1000)
+div = document.querySelector("div")
 
-btn.onclick = function(){
-    clearTimeout(a)
+function dow(){
+    div.innerHTML-- ;
+    if(div.innerHTML === "0"){
+    clearInterval(set)
 }
+}
+
